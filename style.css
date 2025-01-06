@@ -133,6 +133,8 @@ body[data-time="night"] .nav {
     text-transform: uppercase;
     font-weight: 500;
     transition: all var(--transition-time) ease-in-out;
+    /* position: relative;
+    z-index: 10; */
 }
 
 /* Button color variations */
