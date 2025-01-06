@@ -30,3 +30,21 @@ window.onload = function() {
     setInterval(changeBackground, 10000);
     changeBackground();
 }
+
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        const loader = document.querySelector('.loader');
+        const loaderContainer = document.querySelector('.loader-container');
+        const contentContainer = document.querySelector('.content-container');
+        
+        loader.classList.add('expand');
+        
+        setTimeout(() => {
+            loaderContainer.style.opacity = '0';
+            contentContainer.style.opacity = '1';
+            setTimeout(() => {
+                loaderContainer.style.display = 'none';
+            }, 500);
+        }, 1000);
+    }, 2000);
+});
