@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #f3f4f6;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .sensor-values {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+  }
+  
+  .sensor-box {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .sensor-box h4 {
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .sensor-box p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .graph-section {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .graph-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .graph-placeholder {
+    flex: 1;
+    background: linear-gradient(135deg, #eee, #ddd);
+    border-radius: 10px;
+  }
+  

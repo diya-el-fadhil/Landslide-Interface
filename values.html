@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sensor Dashboard</title>
+  <link rel="stylesheet" href="values.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="sensor-values">
+      <div class="sensor-box" id="temp-box">
+        <h4>DHT22 - Temperature</h4>
+        <p id="temp">-- °C</p>
+      </div>
+      <div class="sensor-box" id="humidity-box">
+        <h4>DHT22 - Humidity</h4>
+        <p id="humidity">-- %</p>
+      </div>
+      <div class="sensor-box">
+        <h4>YL-69 - Soil Moisture</h4>
+        <p id="soil">--</p>
+      </div>
+      <div class="sensor-box">
+        <h4>YL-83 - Rain Level</h4>
+        <p id="rain">--</p>
+      </div>
+      <div class="sensor-box">
+        <h4>ADXL345 - Acceleration</h4>
+        <p id="accel">X: -- | Y: -- | Z: --</p>
+      </div>
+      <div class="sensor-box">
+        <h4>BMP180 - Pressure</h4>
+        <p id="pressure">-- hPa</p>
+      </div>
+    </div>
+
+    <div class="graph-section">
+      <h3>Live Sensor Graph</h3>
+      <div class="graph-placeholder" id="graph-placeholder">
+        <!-- Insert chart or graph here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="values.js"></script>
+</body>
+</html>
